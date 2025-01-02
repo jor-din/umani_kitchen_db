@@ -1,0 +1,11 @@
+"ProductID";"Name";"CuisineType";"Description";"ServingSize";"Price";"Stock"
+1;"Spring Rolls";"Asian";"Crispy rolls with vegetable filling";"2 rolls";4.99;50
+2;"Pad Thai";"Thai";"Classic stir-fried noodles";"1 serving";9.99;30
+3;"Miso Soup";"Japanese";"Traditional soup with tofu and seaweed";"1 bowl";3.99;40
+4;"Sushi Platter";"Japanese";"Assorted sushi rolls";"8 pieces";14.99;20
+5;"Kimchi Fried Rice";"Korean";"Spicy fried rice with kimchi";"1 serving";7.99;25
+6;"Pho";"Vietnamese";"Beef noodle soup with fresh herbs";"1 bowl";8.99;15
+7;"Dim Sum Platter";"Chinese";"Assorted steamed dumplings";"8 pieces";8.99;30
+8;"Mango Sticky Rice";"Thai";"Sweet sticky rice with mango slices";"1 serving";7.99;15
+9;"Bubble Tea";"Taiwanese";"Milk tea with tapioca pearls";"1 cup";4.99;50
+10;"Satay Skewers";"Indonesian";"Grilled meat skewers with peanut sauce";"3 skewers";6.99;20
