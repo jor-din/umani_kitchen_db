@@ -1,11 +1,11 @@
-Asian Meal Kit Subscription Service: Comprehensive Business Proposal and Requirements
+# Asian Meal Kit Subscription Service: Comprehensive Business Proposal and Requirements
 
-Jordin Huang and Hannah Lin
+## Jordin Huang and Hannah Lin
 
 
 With many meal kit subscription services focusing on Western cuisine, this company has stepped up to address the growing demand for Asian cuisine. The Asian meal kit subscription service seeks to provide customers with delicious, authentic, and restaurant-quality Asian dishes at the comfort of their own homes. With pre-portioned ingredients and easy-to-follow recipes, these kits feature authentic recipes and high-quality ingredients, often not found at local grocery stores. Customers are now able to enjoy restaurant-quality Asian cuisine meals without the hassle of purchasing ingredients in bulk or meal planning. The pre-portioned ingredients cut down on food waste; customers receive exactly what they need for each meal. Influencers are key to promoting the meal kit service, using their social media platforms to showcase the convenience and variety of asian cuisine recipes the kit provides. This project will model how the company integrates customer preferences, supplier coordination, and influencer marketing to provide a sustainable, authentic, and high-quality meal kit subscription service.
 
-Theory for Asian Meal Kit Subscription
+## Theory for Asian Meal Kit Subscription
 
 The company specializes in delivering Asian meal kits through a subscription model. Each meal kit must be designed to cater to diverse customer preferences and dietary needs (e.g. vegan, gluten-free). To manage this; the company needs to record essential information about meals, customers, influencers, suppliers and orders. 
 
