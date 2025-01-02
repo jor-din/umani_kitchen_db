@@ -1,0 +1,22 @@
+Asian Meal Kit Subscription Service: Comprehensive Business Proposal and Requirements
+
+Jordin Huang and Hannah Lin
+
+
+With many meal kit subscription services focusing on Western cuisine, this company has stepped up to address the growing demand for Asian cuisine. The Asian meal kit subscription service seeks to provide customers with delicious, authentic, and restaurant-quality Asian dishes at the comfort of their own homes. With pre-portioned ingredients and easy-to-follow recipes, these kits feature authentic recipes and high-quality ingredients, often not found at local grocery stores. Customers are now able to enjoy restaurant-quality Asian cuisine meals without the hassle of purchasing ingredients in bulk or meal planning. The pre-portioned ingredients cut down on food waste; customers receive exactly what they need for each meal. Influencers are key to promoting the meal kit service, using their social media platforms to showcase the convenience and variety of asian cuisine recipes the kit provides. This project will model how the company integrates customer preferences, supplier coordination, and influencer marketing to provide a sustainable, authentic, and high-quality meal kit subscription service.
+
+Theory for Asian Meal Kit Subscription
+
+The company specializes in delivering Asian meal kits through a subscription model. Each meal kit must be designed to cater to diverse customer preferences and dietary needs (e.g. vegan, gluten-free). To manage this; the company needs to record essential information about meals, customers, influencers, suppliers and orders. 
+
+For each meal kit (PRODUCT), the company must store: MEAL KIT ID to uniquely identify the kit, NAME for the dish, TYPE OF CUISINE to categorize the meals, RECIPE providing step-by-step instructions, FOOD ALLERGENS/DIETARY RESTRICTIONS to accommodate various health needs, SERVING SIZE recorded to ensure the kit means the serving requirements, INGREDIENTS list what is included in the kit, AVAILABILITY of each meal kit should be noted to either be continuous or seasonal, CUSTOMER RATING (anonymous) will help asses meal popularity and quality. 
+
+The company needs to maintain a database of CUSTOMER. For each customer, it should record CUSTOMER ID to uniquely identify them, NAME, PHONE NUMBER, EMAIL, DELIVERY ADDRESS, BILLING INFORMATION should be securely stored, ALLERGIES/PREFERENCES, REFERRAL CODE for new customers (first order) to track marketing effectiveness, SUBSCRIPTION PLAN numbers of meal and servings per week, DELIVERY FREQUENCY weekly, biweekly, monthly, ORDER HISTORY. 
+
+Influencers play a key role in promoting the meal kits, and the company needs to track their information as well. Each influencer will have a NAME, INFLUENCER ID, GENDER, AGE, DOB recorded. The SOCIAL MEDIA ACCOUNTS will be monitored, along with the NUMBER OF FOLLOWERS they have. Each influencer will be assigned a REFERRAL CODE for tracking purposes, and their COMMISSION RATE for successful subscriptions generated through their promotions must be documented.
+
+The company will also maintain a database of SUPPLIER. For each supplier, it will store a SUPPLIER ID, NAME, PRODUCT PRICES, ADDRESS, DELIVERY SCHEDULES/LEAD TIMES for product delivery should be recorded to ensure timely fulfillment of orders. 
+
+Each purchase needs to have a unique ORDER ID to track each transaction. Additionally, the system will have to record the CUSTOMER ID to link the order to the respective customer. The ORDER TIME, DELIVERY DATE, STATUS, and TRACKING DELIVERY INFORMATION are important pieces of logistic information to ensure each order is fulfilled in a timely fashion and the customer is informed of the order’s progress. The PRODUCTS PURCHASED, QUANTITY, and PRODUCT PRICE are used for fulfillment and to provide a clear breakdown to the customer and system of what has been ordered.
+
+The process of tracking the company’s financial metrics is very important. The company should monitor SUBSCRIPTION REVENUE generated from the meal kit service, as it is the primary source of income. Additionally, it is important to account for costs such as SUPPLIER COSTS, which include expenses associated with procuring less common and high-quality products from suppliers Another cost that needs to be recorded are INFLUENCER COMMISSION PAYOUTS, for influencers’ promotional efforts promoting the meal kit. Lastly, SHIPPING AND DELIVERY COSTS. Oftentimes, if customers are first time subscribers, the company provides free shipping for their order to encourage sign-ups.
