@@ -77,7 +77,7 @@ This project models a subscription-based meal kit service that specializes in **
 
 ## 📊 SQL and NoSQL Queries
 
-### SQl
+### SQL
 ```sql
 SELECT ProductID, Name, Price FROM PRODUCT WHERE Price > 10.00;
 
