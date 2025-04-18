@@ -75,11 +75,42 @@ This project models a subscription-based meal kit service that specializes in **
 - `influencer_commission_payouts`  
 - `shipping_delivery_costs`  
 
-## 📊 Project Goals  
-- Design a comprehensive relational database schema  
-- Simulate real-world business logic for operations, marketing, and customer preferences 
-- Enable data analysis for optimizing operations and growth  
+## 📊 SQL and NoSQL Queries
 
+### SQl
+```sql
+SELECT ProductID, Name, Price FROM PRODUCT WHERE Price > 10.00;
+
+SELECT COUNT(OrderID) AS TotalOrders, AVG(TotalAmount) AS AverageOrderAmount
+FROM `ORDER`;
+
+-- High-spending customers
+SELECT c.Name, SUM(o.TotalAmount) AS TotalSpent
+FROM CUSTOMER c JOIN `ORDER` o ON c.CustomerID = o.CustomerID
+GROUP BY c.CustomerID
+HAVING SUM(o.TotalAmount) > (SELECT AVG(TotalAmount) FROM `ORDER`);
+
+-- Union of Customers and Influencers
+SELECT Name AS PersonName, 'Customer' AS Role FROM CUSTOMER
+UNION
+SELECT Name AS PersonName, 'Influencer' AS Role FROM INFLUENCER;
+ ```
+### NoSQL MongoDB
+```sql
+// Customers with gluten allergy
+db.customers.find({ allergies: "gluten" })
+
+// Count of customers by subscription
+db.customers.aggregate([
+  { $group: { _id: "$subscriptionPlan", count: { $sum: 1 } } }
+])
+
+// Total sales per customer (delivered orders)
+db.orders.aggregate([
+  { $match: { status: "delivered" } },
+  { $group: { _id: "$customerID", totalSales: { $sum: "$totalAmount" } } }
+])
+```
 ## ✅ Conclusion
 
 ### 📌 Project Outcomes
