@@ -115,7 +115,13 @@ db.orders.aggregate([
 ])
 ```
 
-## Python
+## 🐍 Python Integration
+### Used Python libraries:
+- pymysql: Connect and query MySQL database
+- pandas, numpy: Data transformation
+- matplotlib, seaborn: Visualizations
+
+<img width="527" alt="image" src="https://github.com/user-attachments/assets/980ff7e9-46a9-4d77-b4b6-140202ca4f67" />
 <img width="484" alt="image" src="https://github.com/user-attachments/assets/737325ff-c4d7-48db-9974-508e818b971d" />
 <img width="653" alt="image" src="https://github.com/user-attachments/assets/7133ac3c-26f6-48de-8cbc-23c9621ca14f" />
 
