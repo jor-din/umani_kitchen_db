@@ -17,7 +17,7 @@ This project models a subscription-based meal kit service that specializes in **
 
 ## 🗃️ Data Model Components  
 ### ERD 
-v<img width="648" alt="image" src="https://github.com/user-attachments/assets/7370a777-2327-4361-9592-ee3a0c2fd3d0" />
+<img width="648" alt="image" src="https://github.com/user-attachments/assets/7370a777-2327-4361-9592-ee3a0c2fd3d0" />
 
 
 ### 📦 Product (Meal Kit)
