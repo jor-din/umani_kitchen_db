@@ -16,6 +16,9 @@ This project models a subscription-based meal kit service that specializes in **
 - **Supplier Coordination:** Partners with trusted suppliers to source high-quality and rare ingredients.  
 
 ## 🗃️ Data Model Components  
+### ERD 
+v<img width="648" alt="image" src="https://github.com/user-attachments/assets/7370a777-2327-4361-9592-ee3a0c2fd3d0" />
+
 
 ### 📦 Product (Meal Kit)
 - `meal_kit_id` (PK)  
@@ -111,6 +114,12 @@ db.orders.aggregate([
   { $group: { _id: "$customerID", totalSales: { $sum: "$totalAmount" } } }
 ])
 ```
+
+## Python
+<img width="484" alt="image" src="https://github.com/user-attachments/assets/737325ff-c4d7-48db-9974-508e818b971d" />
+<img width="653" alt="image" src="https://github.com/user-attachments/assets/7133ac3c-26f6-48de-8cbc-23c9621ca14f" />
+
+
 ## ✅ Conclusion
 
 ### 📌 Project Outcomes
