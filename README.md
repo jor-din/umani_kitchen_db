@@ -1,22 +1,78 @@
-# Asian Meal Kit Subscription Service: Comprehensive Business Proposal and Requirements
+# Asian Meal Kit Subscription Service  
+**By Jordin Huang and Hannah Lin**
 
-## Jordin Huang and Hannah Lin
+## 🌟 Overview  
+This project models a subscription-based meal kit service that specializes in **authentic Asian cuisine**. While most existing services cater to Western meals, this service fills a gap in the market by delivering high-quality, restaurant-style Asian dishes directly to customers' homes.
 
+## 🥢 Key Features  
+- **Authentic Recipes:** Pre-portioned ingredients and step-by-step recipes for diverse Asian dishes.  
+- **Dietary Options:** Kits support vegan, gluten-free, and allergy-friendly diets.  
+- **Convenient & Sustainable:** Reduces food waste and eliminates the hassle of grocery shopping and meal planning.  
+- **Influencer Marketing:** Leverages influencers to promote kits through social media.  
+- **Supplier Coordination:** Partners with trusted suppliers to source high-quality and rare ingredients.  
 
-With many meal kit subscription services focusing on Western cuisine, this company has stepped up to address the growing demand for Asian cuisine. The Asian meal kit subscription service seeks to provide customers with delicious, authentic, and restaurant-quality Asian dishes at the comfort of their own homes. With pre-portioned ingredients and easy-to-follow recipes, these kits feature authentic recipes and high-quality ingredients, often not found at local grocery stores. Customers are now able to enjoy restaurant-quality Asian cuisine meals without the hassle of purchasing ingredients in bulk or meal planning. The pre-portioned ingredients cut down on food waste; customers receive exactly what they need for each meal. Influencers are key to promoting the meal kit service, using their social media platforms to showcase the convenience and variety of asian cuisine recipes the kit provides. This project will model how the company integrates customer preferences, supplier coordination, and influencer marketing to provide a sustainable, authentic, and high-quality meal kit subscription service.
+## 🗃️ Data Model Components  
 
-## Theory for Asian Meal Kit Subscription
+### 📦 Product (Meal Kit)
+- `meal_kit_id` (PK)  
+- `name`  
+- `type_of_cuisine`  
+- `recipe`  
+- `food_allergens_dietary_restrictions`  
+- `serving_size`  
+- `ingredients`  
+- `availability` (e.g., continuous, seasonal)  
+- `customer_rating`  
 
-The company specializes in delivering Asian meal kits through a subscription model. Each meal kit must be designed to cater to diverse customer preferences and dietary needs (e.g. vegan, gluten-free). To manage this; the company needs to record essential information about meals, customers, influencers, suppliers and orders. 
+### 👤 Customer
+- `customer_id` (PK)  
+- `name`  
+- `phone_number`  
+- `email`  
+- `delivery_address`  
+- `billing_information`  
+- `allergies_preferences`  
+- `referral_code`  
+- `subscription_plan`  
+- `delivery_frequency` (weekly, biweekly, monthly)  
+- `order_history`  
 
-For each meal kit (PRODUCT), the company must store: MEAL KIT ID to uniquely identify the kit, NAME for the dish, TYPE OF CUISINE to categorize the meals, RECIPE providing step-by-step instructions, FOOD ALLERGENS/DIETARY RESTRICTIONS to accommodate various health needs, SERVING SIZE recorded to ensure the kit means the serving requirements, INGREDIENTS list what is included in the kit, AVAILABILITY of each meal kit should be noted to either be continuous or seasonal, CUSTOMER RATING (anonymous) will help asses meal popularity and quality. 
+### 📣 Influencer
+- `influencer_id` (PK)  
+- `name`  
+- `gender`  
+- `dob`  
+- `social_media_accounts`  
+- `followers_count`  
+- `referral_code`  
+- `commission_rate`  
 
-The company needs to maintain a database of CUSTOMER. For each customer, it should record CUSTOMER ID to uniquely identify them, NAME, PHONE NUMBER, EMAIL, DELIVERY ADDRESS, BILLING INFORMATION should be securely stored, ALLERGIES/PREFERENCES, REFERRAL CODE for new customers (first order) to track marketing effectiveness, SUBSCRIPTION PLAN numbers of meal and servings per week, DELIVERY FREQUENCY weekly, biweekly, monthly, ORDER HISTORY. 
+### 🚚 Supplier
+- `supplier_id` (PK)  
+- `name`  
+- `product_prices`  
+- `address`  
+- `delivery_schedule` / `lead_time`  
 
-Influencers play a key role in promoting the meal kits, and the company needs to track their information as well. Each influencer will have a NAME, INFLUENCER ID, GENDER, AGE, DOB recorded. The SOCIAL MEDIA ACCOUNTS will be monitored, along with the NUMBER OF FOLLOWERS they have. Each influencer will be assigned a REFERRAL CODE for tracking purposes, and their COMMISSION RATE for successful subscriptions generated through their promotions must be documented.
+### 🧾 Order
+- `order_id` (PK)  
+- `customer_id` (FK)  
+- `order_time`  
+- `delivery_date`  
+- `status`  
+- `tracking_info`  
+- `products_purchased`  
+- `quantity`  
+- `product_price`  
 
-The company will also maintain a database of SUPPLIER. For each supplier, it will store a SUPPLIER ID, NAME, PRODUCT PRICES, ADDRESS, DELIVERY SCHEDULES/LEAD TIMES for product delivery should be recorded to ensure timely fulfillment of orders. 
+### 💰 Financial Tracking
+- `subscription_revenue`  
+- `supplier_costs`  
+- `influencer_commission_payouts`  
+- `shipping_delivery_costs`  
 
-Each purchase needs to have a unique ORDER ID to track each transaction. Additionally, the system will have to record the CUSTOMER ID to link the order to the respective customer. The ORDER TIME, DELIVERY DATE, STATUS, and TRACKING DELIVERY INFORMATION are important pieces of logistic information to ensure each order is fulfilled in a timely fashion and the customer is informed of the order’s progress. The PRODUCTS PURCHASED, QUANTITY, and PRODUCT PRICE are used for fulfillment and to provide a clear breakdown to the customer and system of what has been ordered.
+## 📊 Project Goals  
+- Design a comprehensive relational database schema  
+- Simulate real-world business logic for operations, marketing, and customer preferences 
+- Enable data analysis for optimizing operations and growth  
 
-The process of tracking the company’s financial metrics is very important. The company should monitor SUBSCRIPTION REVENUE generated from the meal kit service, as it is the primary source of income. Additionally, it is important to account for costs such as SUPPLIER COSTS, which include expenses associated with procuring less common and high-quality products from suppliers Another cost that needs to be recorded are INFLUENCER COMMISSION PAYOUTS, for influencers’ promotional efforts promoting the meal kit. Lastly, SHIPPING AND DELIVERY COSTS. Oftentimes, if customers are first time subscribers, the company provides free shipping for their order to encourage sign-ups.
