@@ -76,3 +76,16 @@ This project models a subscription-based meal kit service that specializes in **
 - Simulate real-world business logic for operations, marketing, and customer preferences 
 - Enable data analysis for optimizing operations and growth  
 
+## ✅ Conclusion
+
+### 📌 Project Outcomes
+- Successfully designed and implemented a relational database in **MySQL** and a NoSQL structure in **MongoDB**
+- Effectively migrated structured SQL data into MongoDB collections, while maintaining relationship integrity using `ObjectID` fields and references
+- Connected the MySQL database to **Python** and executed queries to showcase dynamic data insights
+- Queried complex relationships across tables/collections using **SQL joins** and **MongoDB `$lookup`**
+
+### ⚠️ Shortcomings
+- **MongoDB** does not enforce foreign key constraints, which can lead to **orphaned data** if referenced documents are deleted
+- In **SQL**, performance issues may arise with **large joins** and **aggregate queries** over time
+- Future improvements include integrating **visualization tools** like **Tableau** or **Power BI** to better present project insights
+
