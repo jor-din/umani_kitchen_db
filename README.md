@@ -2,7 +2,8 @@
 **By Jordin Huang and Hannah Lin**
 
 
-[📄 View Final Project Report](./Umami Kitchen_Final Report.pdf)
+[📄 View Final Project Report](./Umami%20Kitchen_Final%20Report.pdf)
+
 
 ## 🌟 Overview  
 This project models a subscription-based meal kit service that specializes in **authentic Asian cuisine**. While most existing services cater to Western meals, this service fills a gap in the market by delivering high-quality, restaurant-style Asian dishes directly to customers' homes.
